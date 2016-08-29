@@ -39,7 +39,7 @@ var appInfo = {
 };
 
 gulp.task('clean', ()=> {
-    return del([appInfo.distDir, appInfo.tmp,appInfo.revDir]);
+    return del([appInfo.distDir, appInfo.tmp, appInfo.revDir]);
 });
 
 /* 打包压缩css/scss文件 / make all css/scss into one file */
@@ -90,19 +90,19 @@ gulp.task('html', () => {
 gulp.task('markVersion', ()=> {
 
     const needFile = [appInfo.distDir + '**/*.{js,css}'];
-    const moveFile = [appInfo.distDir+'font/**/*',appInfo.distDir+'index.html'];
+    const moveFile = [appInfo.distDir + 'font/**/*', appInfo.distDir + 'index.html'];
 
     return gulp.src(needFile)
         .pipe(rev())
         .pipe(gulp.dest(appInfo.revDir))
         .pipe(rev.manifest())
         .pipe(gulp.dest(appInfo.revDir + 'rev'))
-        .pipe(gulp.src(moveFile,{ base: appInfo.distDir }))
+        .pipe(gulp.src(moveFile, {base: appInfo.distDir}))
         .pipe(gulp.dest(appInfo.revDir));
 
 });
 
-gulp.task('addVersion',()=>{
+gulp.task('addVersion', ()=> {
 
     return gulp.src(['**/rev/**/*.json', appInfo.revDir + '*.html'])
         .pipe(revCollector())
