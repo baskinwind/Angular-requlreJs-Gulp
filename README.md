@@ -2,6 +2,7 @@
 
 > AngularJS webapp using requirejs gulp
 ---
+
 > 安装插件 / install plugins
 
 1. 加载所需的node模块 / load node modules
@@ -13,13 +14,14 @@
     `bower install`
     
 ---
+
 > 主要解决问题
 
-使用requireJs来开发项目，对程序员来说是极其友好的，但是对于浏览器来所不得不说是个灾难，但请求过多会带来的性能问题，因此写了一套gulp任务，在保持原有代码不变的情况下，压缩整合代码。
+使用requireJs来开发项目，对程序员来说是极其友好的，但是对于浏览器来所不得不说是个灾难，请求过多会带来的性能问题，因此写了一套gulp任务，在保持原有代码不变的情况下，压缩整合代码。
 
 ---
 
-> gulp任务 / gulp tasks
+> gulp任务列表 / gulp tasks list
 
 1. `clean` : 清除临时目录
 2. `styles` : 打包压缩`css/scss`文件
