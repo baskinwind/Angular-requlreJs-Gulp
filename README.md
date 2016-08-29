@@ -41,7 +41,7 @@
 > 注
 
 1. 使用的`gulp4.0`版本，与之前的版本会用冲突，使用前请先保证本地的`gulp`已清除，以免不必要的`bug`。
-2. 使用的`gulp-useref`和`gulp-rev`为最新版本，比较之前的插件`API`有较大的改动。如若需要更改`gulp`的代码，先去[npm-gulp-useref](https://www.npmjs.com/package/gulp-useref)和[npm-gulp-rev](https://www.npmjs.com/package/gulp-rev)上查阅后更改。
+2. 使用的`gulp-useref`(`3.1.0`)和`gulp-rev`(`7.1.2`)为最新版本，比较之前的插件`API`有较大的改动。如若需要更改`gulp`的代码，先去[npm-gulp-useref](https://www.npmjs.com/package/gulp-useref)和[npm-gulp-rev](https://www.npmjs.com/package/gulp-rev)上查阅后更改。
 3. 该项目的目录结构可以更改，如若更改，需要到`gulpfile.js`文件中修改配置信息，配置对象为:`appInfo`。
 4. 该项目不仅仅适用于`AngularJs`,任何使用`RequireJs`搭建项目的都可以使用，只需将所有的符合`RequireJs`模块的代码放入到`script`目录即可。
 5. 有任何问题，可以联系我。[wwsxuan@163.com](mailto:wwsxuan@163.com)
