@@ -1,0 +1,15 @@
+# Dependencies
+node_modules
+app/lib/bower
+
+# Build files
+dist
+rev
+.tmp
+
+# IntelliJ project files
+*.iml
+.idea
+.css
+.map
+test.js

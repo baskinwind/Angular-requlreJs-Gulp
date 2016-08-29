@@ -1,0 +1,13 @@
+{
+  "name": "angular-requirejs-demo",
+  "version": "0.0.0",
+  "dependencies": {
+    "requirejs": "~2.1.17",
+    "requirejs-text": "~2.0.14",
+    "angular": "~1.4.0",
+    "angular-route": "~1.4.0"
+  },
+  "devDependencies": {
+    "almond": "^0.3.2"
+  }
+}
