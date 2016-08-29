@@ -3,7 +3,7 @@
 > AngularJS webapp using requirejs gulp
 ---
 
-> 安装插件 / install plugins
+### 安装插件 / install plugins
 
 1. 加载所需的node模块 / load node modules
 
@@ -15,13 +15,13 @@
     
 ---
 
-> 主要解决问题
+### 主要解决问题
 
 使用requireJs来开发项目，对程序员来说是极其友好的，但是对于浏览器来所不得不说是个灾难，请求过多会带来的性能问题，因此写了一套gulp任务，在保持原有代码不变的情况下，压缩整合代码。
 
 ---
 
-> gulp任务列表 / gulp tasks list
+### gulp任务列表 / gulp tasks list
 
 1. `clean` : 清除临时目录
 2. `styles` : 打包压缩`css/scss`文件
@@ -38,7 +38,7 @@
 
 ---
 
-> 注
+### 注
 
 1. 使用的`gulp4.0`版本，与之前的版本会用冲突，使用前请先保证本地的`gulp`已清除，以免不必要的`bug`。
 2. 使用的`gulp-useref`(`3.1.0`)和`gulp-rev`(`7.1.2`)为最新版本，比较之前的插件`API`有较大的改动。如若需要更改`gulp`的代码，先去[npm-gulp-useref](https://www.npmjs.com/package/gulp-useref)和[npm-gulp-rev](https://www.npmjs.com/package/gulp-rev)上查阅后更改。
