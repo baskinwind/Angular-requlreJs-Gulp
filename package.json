@@ -1,13 +1,10 @@
 {
-  "name": "cloudjet-tk-web4pc",
+  "name": "gulp-requireJs-AngularJs",
   "version": "1.0.0",
-  "description": "星任务钉钉PC版本",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "主要解决使用requireJs开发所带来的请求次数多的问题",
   "repository": {
     "type": "git",
-    "url": "https://code.buy-key.com/task-code/cloudjet-tk-web4pc.git"
+    "url": "https://github.com/wsxuan/gulp-requireJs-AngularJs.git"
   },
   "author": "",
   "license": "ISC",
@@ -19,14 +16,12 @@
     "del": "^2.2.2",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-clean-css": "^2.0.12",
-    "gulp-connect": "^5.0.0",
     "gulp-delete-lines": "0.0.7",
     "gulp-filter": "^4.0.0",
     "gulp-flatten": "^0.3.1",
     "gulp-htmlmin": "^2.0.0",
     "gulp-if": "^2.0.1",
     "gulp-imagemin": "^3.0.3",
-    "gulp-jscs": "^4.0.0",
     "gulp-jshint": "^2.0.1",
     "gulp-livereload": "^3.8.1",
     "gulp-plumber": "^1.1.0",
@@ -35,9 +30,7 @@
     "gulp-requirejs-optimize": "^1.2.0",
     "gulp-rev": "^7.1.2",
     "gulp-rev-collector": "^1.0.5",
-    "gulp-rev-replace": "^0.4.3",
     "gulp-sass": "^2.3.2",
-    "gulp-size": "^2.1.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^2.0.0",
     "gulp-useref": "^3.1.0",
