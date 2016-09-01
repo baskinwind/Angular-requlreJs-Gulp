@@ -20,6 +20,7 @@
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-clean-css": "^2.0.12",
     "gulp-connect": "^5.0.0",
+    "gulp-delete-lines": "0.0.7",
     "gulp-filter": "^4.0.0",
     "gulp-flatten": "^0.3.1",
     "gulp-htmlmin": "^2.0.0",
@@ -27,11 +28,9 @@
     "gulp-imagemin": "^3.0.3",
     "gulp-jscs": "^4.0.0",
     "gulp-jshint": "^2.0.1",
-    "gulp-less": "^3.1.0",
     "gulp-livereload": "^3.8.1",
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^6.1.1",
-    "gulp-protractor": "^3.0.0",
     "gulp-replace": "^0.5.4",
     "gulp-requirejs-optimize": "^1.2.0",
     "gulp-rev": "^7.1.2",
@@ -42,11 +41,6 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^2.0.0",
     "gulp-useref": "^3.1.0",
-    "jshint": "^2.9.3",
-    "lazypipe": "^1.0.1",
-    "load-tasks-gulp": "0.0.3",
-    "main-bower-files": "^2.13.1",
-    "minimist": "^1.2.0",
-    "pump": "^1.0.1"
+    "lazypipe": "^1.0.1"
   }
 }

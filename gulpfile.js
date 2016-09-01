@@ -20,7 +20,8 @@ var autoprefixer = require('autoprefixer'),
     uglify = require('gulp-uglify'),
     useref = require('gulp-useref'),
     lazypipe = require('lazypipe'),
-    revCollector = require('gulp-rev-collector');
+    revCollector = require('gulp-rev-collector'),
+    deleteLines = require('gulp-delete-lines');
 
 /* load plugins for browser */
 
@@ -35,7 +36,7 @@ var appInfo = {
     mainCss: 'main.scss',
     requireConfig: './app/scripts/require-config.js',
     requireMainFile: 'main',
-    almondPath: '../lib/bower/almond/almond'
+    almondPath: '../lib/bower/almond/almond',
 };
 
 gulp.task('clean', ()=> {
@@ -43,7 +44,7 @@ gulp.task('clean', ()=> {
 });
 
 /* 打包压缩css/scss文件 / make all css/scss into one file */
-gulp.task('styles', () => {
+gulp.task('styles', ()=> {
 
     return gulp.src(appInfo.appDir + 'styles/**/*.scss')
         .pipe(plumber())
@@ -62,30 +63,29 @@ gulp.task('fonts', () => {
         .pipe(gulp.dest(appInfo.distDir + 'font'));
 });
 
-gulp.task('html', () => {
+gulp.task('html', ()=> {
 
-        var jsChannel = lazypipe()
-            .pipe(requirejsOptimize, {
-                name: appInfo.almondPath,
-                optimize: 'none',
-                useStrict: true,
-                mainConfigFile: appInfo.requireConfig,
-                baseUrl: appInfo.appDir + 'scripts',
-                include: [appInfo.requireMainFile],
-                insertRequire: [appInfo.requireMainFile]
-            })
-            .pipe(uglify);
+    var jsChannel = lazypipe()
+        .pipe(requirejsOptimize, {
+            name: appInfo.almondPath,
+            optimize: 'none',
+            useStrict: true,
+            mainConfigFile: appInfo.requireConfig,
+            baseUrl: appInfo.appDir + 'scripts',
+            include: [appInfo.requireMainFile],
+            insertRequire: [appInfo.requireMainFile]
+        })
+        .pipe(uglify);
 
-        var htmlChannel = lazypipe()
-            .pipe(htmlmin, {collapseWhitespace: true});
+    var htmlChannel = lazypipe()
+        .pipe(htmlmin, {collapseWhitespace: true});
 
-        return gulp.src(appInfo.appDir + '*.html')
-            .pipe(useref({searchPath: '{.tmp,' + appInfo.appDir + '}'}))
-            .pipe(gulpif('**/scripts/main.js', jsChannel()))
-            .pipe(gulpif('**/*.html', htmlChannel()))
-            .pipe(gulp.dest(appInfo.distDir));
-    }
-);
+    return gulp.src(appInfo.appDir + '*.html')
+        .pipe(useref({searchPath: '{.tmp,' + appInfo.appDir + '}'}))
+        .pipe(gulpif('**/scripts/main.js', jsChannel()))
+        .pipe(gulpif('**/*.html', htmlChannel()))
+        .pipe(gulp.dest(appInfo.distDir));
+});
 
 gulp.task('markVersion', ()=> {
 
@@ -110,7 +110,7 @@ gulp.task('addVersion', ()=> {
 
 });
 
-var runServer = (open = false, callback) => {
+var runServer = (open = false, callback)=> {
     browserSync({
         notify: false,
         port: 9000,
@@ -126,7 +126,7 @@ gulp.task('browserSync', ()=> {
     runServer(true);
 });
 
-gulp.task('watch', function () {
+gulp.task('watch', ()=> {
     // watch for changes
     gulp.watch([
         appInfo.appDir + '*.html',
