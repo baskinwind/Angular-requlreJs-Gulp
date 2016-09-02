@@ -1,23 +1,24 @@
 <!doctype html>
 <html lang="zh-CN">
-	<head>
-		<meta charset="utf-8">
-		<title>gulp-requireJs-AngularJs-Demo</title>
-		<meta name="description" content="">
+<head>
+    <meta charset="utf-8">
+    <title>gulp-requireJs-AngularJs-Demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- build:css style/main.css -->
-		<link rel="stylesheet" href="styles/main.css">
-		<!-- endbuild -->
+    <!-- build:css style/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
 
-	</head>
-	<body>
-		<div class="wrap-all flex-parent" ng-view></div>
+</head>
+<body>
+<div class="wrap-all flex-parent column" ui-view></div>
 
-		<!-- build:js scripts/main.js -->
-		<script src="lib/bower/requirejs/require.js"></script>
-		<script src="scripts/require-config.js"></script>
-		<script src="scripts/main.js"></script>
-		<!-- endbuild -->
+<!-- build:js scripts/main.js -->
+<script src="lib/bower/requirejs/require.js"></script>
+<script src="scripts/require-config.js"></script>
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
 
-	</body>
+</body>
 </html>

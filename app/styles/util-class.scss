@@ -1,0 +1,32 @@
+html,body,.wrap-all{
+    height: 100%;
+    width: 100%;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+.flex-parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    &.column{
+        flex-direction: column;
+    }
+    &.start{
+        justify-content: flex-start;
+    }
+    &.avg{
+        justify-content: space-around;
+    }
+}

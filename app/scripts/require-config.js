@@ -5,7 +5,7 @@ require.config({
 
     paths: {
         'angular': '../lib/bower/angular/angular',
-        'angular.route': '../lib/bower/angular-route/angular-route',
+        'angular.ui.router': '../lib/bower/angular-ui-router/release/angular-ui-router',
         'text': '../lib/bower/requirejs-text/text',
         'template': '../template'
     },
@@ -14,7 +14,7 @@ require.config({
         'angular': {
             exports: 'angular'
         },
-        'angular.route': ['angular']
+        'angular.ui.router': ['angular']
     }
 });
 

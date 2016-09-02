@@ -16,7 +16,6 @@
     "del": "^2.2.2",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-clean-css": "^2.0.12",
-    "gulp-delete-lines": "0.0.7",
     "gulp-filter": "^4.0.0",
     "gulp-flatten": "^0.3.1",
     "gulp-htmlmin": "^2.0.0",

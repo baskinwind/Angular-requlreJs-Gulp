@@ -4,11 +4,11 @@ define(function (require) {
 
     var angular = require('angular');
 
-    require('angular.route');
+    require('angular.ui.router');
     require('route');
 
     return angular.module('Demo', [
-        'ngRoute',
+        'ui.router',
         'appRoute'
     ]);
 });

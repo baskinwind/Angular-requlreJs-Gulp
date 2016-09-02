@@ -2,21 +2,34 @@ define(function (require) {
 
     var angular = require('angular');
 
-    var page1Temp = require('text!template/page1.html'),
-        page2Temp = require('text!template/page2.html');
-
-    angular.module('appRoute', ['ngRoute'])
-        .config(['$routeProvider', '$httpProvider', function($routeProvider) {
-            $routeProvider.when('/page1', {
-                    template: page1Temp,
-                    controller: require('controllers/page1Controller')
+    angular.module('appRoute', ['ui.router'])
+        .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
+            $urlRouterProvider.otherwise('/home');
+            $stateProvider
+                .state('state', {
+                    url: "",
+                    template: require('text!template/all.html'),
+                    controller: require('scripts/controllers/allController.js')
                 })
-                .when('/page2', {
-                    template: page2Temp,
-                    controller: require('controllers/page2Controller')
+                .state('state.home', {
+                    url: "/home",
+                    template: require('text!template/home.html'),
+                    controller: require('scripts/controllers/homeController.js')
                 })
-                .when('/', {
-                    redirectTo: '/page1'
+                .state('state.message', {
+                    url: "/message",
+                    template: require('text!template/message.html'),
+                    controller: require('scripts/controllers/messageController.js')
+                })
+                .state('state.mark', {
+                    url: "/mark",
+                    template: require('text!template/mark.html'),
+                    controller: require('scripts/controllers/markController.js')
+                })
+                .state('state.my', {
+                    url: "/my",
+                    template: require('text!template/my.html'),
+                    controller: require('scripts/controllers/myController.js')
                 });
         }])
 });

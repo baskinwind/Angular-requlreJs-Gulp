@@ -20,8 +20,7 @@ var autoprefixer = require('autoprefixer'),
     uglify = require('gulp-uglify'),
     useref = require('gulp-useref'),
     lazypipe = require('lazypipe'),
-    revCollector = require('gulp-rev-collector'),
-    deleteLines = require('gulp-delete-lines');
+    revCollector = require('gulp-rev-collector');
 
 /* load plugins for browser */
 

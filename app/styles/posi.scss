@@ -1,0 +1,18 @@
+.wrap-all {
+    > * {
+        width: 100%;
+    }
+    > .content {
+        height: calc(100% - 50px);
+        flex: auto;
+    }
+    > .nav {
+        @include flex(50px);
+        width: 100%;
+        border-top: 1px solid $base-line-color;
+        .nav-item {
+            @include flex(25%);
+            text-align: center;
+        }
+    }
+}

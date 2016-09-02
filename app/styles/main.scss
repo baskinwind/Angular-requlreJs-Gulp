@@ -1,5 +1,7 @@
 /* load css and scss */
-@import "normal.css";
+@import "../lib/bower/normalize-css/normalize.css";
 @import "../font/iconfont.css";
 @import "variables";
-@import "other";
+@import "mixins";
+@import "posi";
+@import "util-class";
