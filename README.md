@@ -1,7 +1,5 @@
 # gulp-requireJs-AngularJs-demo
 
-> AngularJS webapp using requirejs gulp
----
 
 ### 安装插件 / install plugins
 
