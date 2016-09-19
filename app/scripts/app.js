@@ -6,9 +6,13 @@ define(function (require) {
 
     require('angular.ui.router');
     require('route');
+    require('appService');
+    require('appDirective');
 
     return angular.module('Demo', [
         'ui.router',
-        'appRoute'
+        'appRoute',
+        'appService',
+        'appDirective'
     ]);
 });

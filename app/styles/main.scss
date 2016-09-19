@@ -1,9 +1,18 @@
 
-/* load css and scss */
 
+/* load css and scss */
 @import "../lib/bower/normalize-css/normalize.css";
 @import "../font/iconfont.css";
 @import "variables";
 @import "mixins";
 @import "posi";
 @import "util-class";
+
+.circle {
+    border-radius: 50%;
+    background: #999;
+}
+.squire{
+    background: #000;
+    margin: 10px;
+}

@@ -43,4 +43,12 @@ li {
   .flex-parent.avg {
     justify-content: space-around; }
 
+.circle {
+  border-radius: 50%;
+  background: #999; }
+
+.squire {
+  background: #000;
+  margin: 10px; }
+
 /*# sourceMappingURL=main.css.map */
