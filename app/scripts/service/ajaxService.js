@@ -3,7 +3,7 @@
 define(function () {
 
     /* ajaxService */
-    var service = function ($http) {
+    var service = function ($http, $q) {
         /* service code here */
         var name = 'ajaxService';
         this.getName = function () {
@@ -12,7 +12,7 @@ define(function () {
     };
 
 
-    service.$inject = ['$http'];
+    service.$inject = ['$http', '$q'];
 
     return service;
 });
