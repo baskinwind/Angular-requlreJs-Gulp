@@ -43,3 +43,6 @@
 3. 该项目的目录结构可以更改，如若更改，需要到`gulpfile.js`文件中修改配置信息，配置对象为:`appInfo`。
 4. 该项目不仅仅适用于`AngularJs`,任何使用`RequireJs`搭建项目的都可以使用，只需将所有的符合`RequireJs`模块的代码放入到`script`目录即可。
 5. 有任何问题，可以联系我。[wwsxuan@163.com](mailto:wwsxuan@163.com)
+
+### TODO
+- ADD component

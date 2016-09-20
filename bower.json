@@ -4,7 +4,7 @@
   "dependencies": {
     "requirejs": "~2.1.17",
     "requirejs-text": "~2.0.14",
-    "angular": "~1.4.0",
+    "angular": "^1.5.8",
     "angular-route": "~1.4.0"
   },
   "devDependencies": {
