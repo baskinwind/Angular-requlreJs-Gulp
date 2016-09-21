@@ -4,8 +4,7 @@ define(function () {
 
     var controller = function ($scope,ajaxService) {
         /* controller code here */
-        alert('home page');
-        alert(ajaxService.getName())
+        $scope.text = 'use service:'+ajaxService.getName();
     };
 
 

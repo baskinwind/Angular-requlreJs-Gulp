@@ -4,7 +4,8 @@ define(function () {
 
     var controller = function ($scope) {
         /* controller code here */
-        alert('my page')
+        $scope.github = 'https://github.com/acccco';
+        $scope.homepage = 'http://acohome.cn/';
     };
 
 

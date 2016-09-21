@@ -4,7 +4,7 @@ define(function () {
 
     var controller = function ($scope) {
         /* controller code here */
-        alert('mark page')
+        $scope.momentTime = new moment();
     };
 
 

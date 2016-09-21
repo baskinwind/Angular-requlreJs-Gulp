@@ -16,15 +16,15 @@ define(function (require) {
                     template: require('text!template/home.html'),
                     controller: require('scripts/controllers/homeController.js')
                 })
-                .state('state.message', {
-                    url: "/message",
-                    template: require('text!template/message.html'),
-                    controller: require('scripts/controllers/messageController.js')
+                .state('state.moment', {
+                    url: "/moment",
+                    template: require('text!template/moment.html'),
+                    controller: require('scripts/controllers/momentController.js')
                 })
-                .state('state.mark', {
-                    url: "/mark",
-                    template: require('text!template/mark.html'),
-                    controller: require('scripts/controllers/markController.js')
+                .state('state.directive', {
+                    url: "/directive",
+                    template: require('text!template/directive.html'),
+                    controller: require('scripts/controllers/directiveController.js')
                 })
                 .state('state.my', {
                     url: "/my",

@@ -4,7 +4,7 @@ define(function () {
 
     var controller = function ($scope) {
         /* controller code here */
-        alert('message page')
+        $scope.text = 'use directive'
     };
 
 
