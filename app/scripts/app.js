@@ -9,10 +9,14 @@ define(function (require) {
     require('appService');
     require('appDirective');
 
-    return angular.module('Demo', [
+    var app = angular.module('Demo', [
         'ui.router',
         'appRoute',
         'appService',
         'appDirective'
     ]);
+
+    app.run(require('appInit'));
+
+    return app;
 });

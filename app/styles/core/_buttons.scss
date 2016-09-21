@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+// Buttons
+// --------------------------------------------------
+// from bootstrap
+
+// Base styles 初始类，用于button元素（可点击元素都可以）
+// 规定4个伪类的基本样式 :active, :focus, :hover, disabled
+// 4个基本的类对应相应的伪类 .active, .focus, .hover, .disabled
+// --------------------------------------------------
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0; // For input.btn
+    font-weight: $btn-font-weight;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    border: 1px solid transparent;
+    white-space: nowrap;
+    user-select: none;
+    @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
+
+    &,
+    &:active,
+    &.active {
+        &:focus,
+        &.focus {
+            @extend %tab-focus;
+        }
+    }
+
+    &:hover,
+    &:focus,
+    &.focus {
+        color: $btn-default-color;
+        text-decoration: none;
+    }
+
+    &:active,
+    &.active {
+        outline: 0;
+        background-image: none;
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    }
+
+    &.disabled,
+    &[disabled] {
+        cursor: $cursor-disabled;
+        box-shadow: none;
+        @include opacity(.65);
+    }
+}
+
+a.btn {
+    &.disabled {
+        pointer-events: none; // Future-proof disabling of clicks on `<a>` elements
+    }
+}
+
+// Alternate buttons
+// --------------------------------------------------
+
+.btn-default {
+    @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+}
+
+.btn-primary {
+    @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+}
+
+// Success appears as green
+.btn-success {
+    @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+}
+
+// Info appears as blue-green
+.btn-info {
+    @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+}
+
+// Warning appears as orange
+.btn-warning {
+    @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+}
+
+// Danger and error appear as red
+.btn-danger {
+    @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+}
+
+// Link buttons
+// -------------------------
+
+// Make a button look and behave like a link
+// 使得button像一个a标签
+.btn-link {
+    color: $link-color;
+    font-weight: normal;
+    border-radius: 0;
+
+    &,
+    &:active,
+    &.active,
+    &[disabled] {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+        border-color: transparent;
+    }
+
+    &:hover,
+    &:focus {
+        color: $link-hover-color;
+        text-decoration: $link-hover-decoration;
+        background-color: transparent;
+    }
+
+    &[disabled] {
+        &:hover,
+        &:focus {
+            color: $btn-link-disabled-color;
+            text-decoration: none;
+        }
+    }
+}
+
+// Button 大小 基础类 能直接用
+//--------------------------------------------------
+
+.btn-lg {
+    @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius-large);
+}
+
+.btn-sm {
+    @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
+}
+
+.btn-xs {
+    @include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
+}
+
+// Block button
+// --------------------------------------------------
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+// Vertically space out multiple block buttons
+.btn-block + .btn-block {
+    margin-top: 5px;
+}
+
+// Specificity overrides
+// 一些特殊的按钮
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    &.btn-block {
+        width: 100%;
+    }
+}

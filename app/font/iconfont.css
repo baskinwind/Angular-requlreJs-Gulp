@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1472188246'); /* IE9*/
-  src: url('iconfont.eot?t=1472188246#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1472188246') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1472188246') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1472188246#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1474445429'); /* IE9*/
+  src: url('iconfont.eot?t=1474445429#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1474445429') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1474445429') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1474445429#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -15,10 +15,69 @@
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-zuo:before { content: "\e600"; }
-.icon-jia:before { content: "\e601"; }
-.icon-star:before { content: "\e602"; }
-.icon-right:before { content: "\e608"; }
-.icon-renwu:before { content: "\e603"; }
-.icon-clock:before { content: "\e605"; }
-.icon-user:before { content: "\e606"; }
+.icon-arrowcycle:before { content: "\e600"; }
+.icon-arrowdown:before { content: "\e601"; }
+.icon-arrowdownboldround:before { content: "\e602"; }
+.icon-arrowleftboldround:before { content: "\e603"; }
+.icon-arrowleftthin:before { content: "\e604"; }
+.icon-arrowobliquecontractdirections:before { content: "\e605"; }
+.icon-arrowobliqueexpanddirections:before { content: "\e606"; }
+.icon-arrowright:before { content: "\e607"; }
+.icon-arrowrightboldround:before { content: "\e608"; }
+.icon-arrowupboldround:before { content: "\e609"; }
+.icon-arrowupthin:before { content: "\e60a"; }
+.icon-backward:before { content: "\e60b"; }
+.icon-blank:before { content: "\e60c"; }
+.icon-buttonadd:before { content: "\e60d"; }
+.icon-buttonclose:before { content: "\e60e"; }
+.icon-camera:before { content: "\e60f"; }
+.icon-comments:before { content: "\e610"; }
+.icon-cross:before { content: "\e611"; }
+.icon-download:before { content: "\e612"; }
+.icon-exclamation:before { content: "\e613"; }
+.icon-expand:before { content: "\e614"; }
+.icon-fire:before { content: "\e615"; }
+.icon-forward:before { content: "\e616"; }
+.icon-heart:before { content: "\e617"; }
+.icon-locked:before { content: "\e618"; }
+.icon-loginlockrefresh:before { content: "\e619"; }
+.icon-mail:before { content: "\e61a"; }
+.icon-music:before { content: "\e61b"; }
+.icon-nextfaststep:before { content: "\e61c"; }
+.icon-nextstep:before { content: "\e61d"; }
+.icon-numbereight:before { content: "\e61e"; }
+.icon-numberfive:before { content: "\e61f"; }
+.icon-numberfour:before { content: "\e620"; }
+.icon-numberone:before { content: "\e621"; }
+.icon-numberseven:before { content: "\e622"; }
+.icon-numbersix:before { content: "\e623"; }
+.icon-numberthree:before { content: "\e624"; }
+.icon-numbertwo:before { content: "\e625"; }
+.icon-numberzero:before { content: "\e626"; }
+.icon-off:before { content: "\e627"; }
+.icon-paperclip:before { content: "\e628"; }
+.icon-play:before { content: "\e629"; }
+.icon-previousfaststep:before { content: "\e62a"; }
+.icon-prevstep:before { content: "\e62b"; }
+.icon-question:before { content: "\e62c"; }
+.icon-refresh:before { content: "\e62d"; }
+.icon-setting:before { content: "\e62e"; }
+.icon-settings:before { content: "\e62f"; }
+.icon-signfemale:before { content: "\e630"; }
+.icon-signmale:before { content: "\e631"; }
+.icon-socialaddthis:before { content: "\e632"; }
+.icon-socialfacebook:before { content: "\e633"; }
+.icon-sociallinkedin:before { content: "\e634"; }
+.icon-socialtwitter:before { content: "\e635"; }
+.icon-soundoff:before { content: "\e636"; }
+.icon-soundon:before { content: "\e637"; }
+.icon-stop:before { content: "\e638"; }
+.icon-sun:before { content: "\e639"; }
+.icon-threepoints:before { content: "\e63a"; }
+.icon-triplepoints:before { content: "\e63b"; }
+.icon-upload:before { content: "\e63c"; }
+.icon-user:before { content: "\e63d"; }
+.icon-viewport:before { content: "\e63e"; }
+.icon-viewportvideo:before { content: "\e63f"; }
+.icon-wireframeglobe:before { content: "\e640"; }
+.icon-yen:before { content: "\e641"; }

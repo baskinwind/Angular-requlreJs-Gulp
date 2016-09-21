@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+// Horizontal dividers
+//
+// Dividers (basically an hr) within dropdowns and nav lists
+// 用于设置分割线
+
+@mixin nav-divider($color: #e5e5e5) {
+    height: 1px;
+    margin: (($line-height-computed / 2) - 1) 0;
+    overflow: hidden;
+    background-color: $color;
+}

@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+// Opacity
+// 提供兼容方案，若无必要可不用
+
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    // IE8 filter
+    $opacity-ie: ($opacity * 100);
+    filter: alpha(opacity=$opacity-ie);
+}

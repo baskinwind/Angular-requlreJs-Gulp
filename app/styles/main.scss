@@ -1,8 +1,8 @@
 
 
 /* load css and scss */
-@import "../lib/bower/normalize-css/normalize.css";
 @import "../font/iconfont.css";
+@import "core/init";
 @import "variables";
 @import "mixins";
 @import "posi";
