@@ -3,11 +3,11 @@
 
 ### 安装插件 / install plugins
 
-1. 加载所需的node模块 / load node modules
+1. 加载所需的 `node` 模块 / load node modules
 
     `npm install`
 
-2. 加载页面使用的js插件 / load javascript plugins which use in page
+2. 加载页面使用的 `js` 插件 / load javascript plugins which use in page
 
     `bower install`
 
@@ -15,9 +15,9 @@
 
 ### 主要解决问题
 
-每次使用Angular来开发，总想着有一天要整出一套随拿随用的项目框架来。该项目的目的便在于此。
+每次使用 `Angular` 来开发，总想着有一天要整出一套随拿随用的项目框架来。该项目的目的便在于此。
 
-其次，使用requireJs来开发项目，对程序员来说是极其友好的，但是对于浏览器来所不得不说是个灾难，请求过多会带来的性能问题，因此整合一套gulp任务，在保持原有代码不变的情况下，压缩整合代码。
+其次，使用 `requireJs` 来开发项目，对程序员来说是极其友好的，但是对于浏览器来所不得不说是个灾难，请求过多会带来的性能问题，因此整合一套gulp任务，在保持原有代码不变的情况下，压缩整合代码。
 
 ---
 
@@ -25,7 +25,7 @@
 
 > app/script
 
-js文件（这是废话），使用requireJs来开发。
+`js` 文件（这是废话），使用 `requireJs` 来开发。
 
 > app/script/controllers
 
