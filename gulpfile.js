@@ -33,7 +33,7 @@ var appInfo = {
     revDir: './rev/',
     tmp: './.tmp/',
     mainCss: 'main.scss',
-    requireConfig: './app/scripts/require-config.js',
+    requireConfig: './app/scripts/requireConfig.js',
     requireMainFile: 'main',
     almondPath: '../lib/bower/almond/almond',
 };
