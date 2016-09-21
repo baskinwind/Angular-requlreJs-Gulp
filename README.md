@@ -1,4 +1,4 @@
-# gulp-requireJs-AngularJs-demo
+# AngularJs && requireJs with Gulp
 
 
 ### 安装插件 / install plugins
