@@ -1,12 +1,13 @@
-
-
 /* load css and scss */
 @import "../font/iconfont.css";
-@import "core/init";
 @import "variables";
 @import "mixins";
 @import "posi";
 @import "util-class";
+
+html,body{
+    margin: 0;
+}
 
 .circle {
     border-radius: 50%;

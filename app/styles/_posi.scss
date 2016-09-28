@@ -13,6 +13,11 @@
         .nav-item {
             @include flex(25%);
             text-align: center;
+            line-height: 50px;
+            >div.on{
+                background-color: #000;
+                color: #fff;
+            }
         }
     }
 }

@@ -2,16 +2,16 @@
 <nav class="nav">
     <ul class="flex-parent">
         <li class="nav-item">
-            <div ng-click="toAddress('/home')">home</div>
+            <div ng-class="{'on':nowPath == '/home'}" ng-click="toAddress('/home')">home</div>
         </li>
         <li class="nav-item">
-            <div ng-click="toAddress('/moment')">moment</div>
+            <div ng-class="{'on':nowPath == '/moment'}" ng-click="toAddress('/moment')">moment</div>
         </li>
         <li class="nav-item">
-            <div ng-click="toAddress('/directive')">directive</div>
+            <div ng-class="{'on':nowPath == '/directive'}" ng-click="toAddress('/directive')">directive</div>
         </li>
         <li class="nav-item">
-            <div ng-click="toAddress('/my')">my</div>
+            <div ng-class="{'on':nowPath == '/my'}" ng-click="toAddress('/my')">my</div>
         </li>
     </ul>
 </nav>
