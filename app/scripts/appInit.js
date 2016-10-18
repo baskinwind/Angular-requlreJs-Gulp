@@ -9,8 +9,10 @@ define(function (require) {
             $rootScope[functionName] = window[functionName] = init;
         }
 
-        $rootScope.toAddress = function (add) {
-            $location.path(add);
+        // 地址跳转，可使用search为地址添加queryString。
+        $rootScope.toAddress = function (add,search) {
+            search = angular.extend({},search);
+            $location.path(add).search(search);
         };
 
         $rootScope.goBack = function () {
@@ -18,7 +20,6 @@ define(function (require) {
         };
 
         $rootScope.$on('$stateChangeStart', function (event, toState) {
-            console.log(toState.url);
             $rootScope.nowPath = toState.url;
         });
 
@@ -27,6 +28,7 @@ define(function (require) {
 
         // 手机端点击加速
         require('fastclick').attach(document.body);
+        // BUG : contenteditable 为 true 不能够正常点击，需要添加 needsclick class 作为钩子，略过点击加速。
     };
 
     service.$inject = ['$rootScope', '$location'];
