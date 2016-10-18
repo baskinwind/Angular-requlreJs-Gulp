@@ -10,4 +10,5 @@ define(function (require) {
     directive.directive('userCircle',require('./directives/circleDirective'));
     directive.directive('userSquire',require('./directives/squireDirective'));
 
+
 });
